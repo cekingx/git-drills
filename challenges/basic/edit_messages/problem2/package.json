@@ -1,0 +1,21 @@
+{
+  "name": "awesome-calculator",
+  "version": "1.0.0",
+  "description": "A simple calculator library for Node.js",
+  "main": "lib/calculator.js",
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "test": "jest",
+    "docs": "jsdoc src/*.js -d docs"
+  },
+  "keywords": ["calculator", "math", "utility"],
+  "author": "Git Drills Student",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "jest": "^29.0.0",
+    "jsdoc": "^4.0.0"
+  }
+}

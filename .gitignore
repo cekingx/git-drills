@@ -11,6 +11,8 @@ tmp/
 # Challenge working directories (created during execution)
 challenges/*/problem*/git_files/
 challenges/*/problem*/.git/
+challenges/*/problem*/workspace/
+challenges/*/problem*/tmp/
 
 # System files
 .DS_Store
