@@ -408,3 +408,7 @@ Master Git like a pro with hands-on practice and real-world scenarios.
 ## Development Attribution
 
 This project was created with significant assistance from Claude AI (Anthropic). Claude was heavily involved in the design, implementation, and documentation of this learning tool, contributing to the architecture, challenge creation, verification systems, and educational content structure.
+
+## Note
+
+I build this project without knowing what to build. .I just have a discussion with claude and execute it with claude. Just burning my token allowance haha.
