@@ -1,0 +1,35 @@
+# Git Drills - Files to ignore
+
+# User progress and statistics
+.progress/
+*.log
+
+# Temporary files and directories
+.temp/
+tmp/
+
+# Challenge working directories (created during execution)
+challenges/*/problem*/git_files/
+challenges/*/problem*/.git/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Backup files created by the safety system
+*-backup-*
+
+# Test artifacts
+test-*.git
+test-repo/
+
+# Environment-specific configuration
+.env
+.env.local

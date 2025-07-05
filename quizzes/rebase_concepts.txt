@@ -1,0 +1,105 @@
+Q: What is the main advantage of using rebase over merge for feature branches?
+TYPE: multiple_choice
+A1: Rebase is faster than merge
+A2: Rebase creates a linear history without merge commits
+A3: Rebase automatically resolves conflicts
+A4: Rebase works better with remote repositories
+CORRECT: 2
+EXPLANATION: Rebase creates a linear history by replaying commits on top of the target branch, avoiding merge commits that can clutter the history.
+CONCEPT: interactive_rebase
+DIFFICULTY: 2
+
+Q: Which interactive rebase command would you use to combine multiple commits into one?
+TYPE: multiple_choice
+A1: pick
+A2: edit
+A3: squash
+A4: drop
+CORRECT: 3
+EXPLANATION: The squash command combines the commit with the previous commit, allowing you to merge multiple commits into one.
+CONCEPT: squash_commits
+DIFFICULTY: 1
+
+Q: What happens when you use the "edit" command in an interactive rebase?
+TYPE: multiple_choice
+A1: The commit is removed from history
+A2: The commit message is changed
+A3: The rebase stops at that commit for you to make changes
+A4: The commit is combined with the next one
+CORRECT: 3
+EXPLANATION: The edit command pauses the rebase at that commit, allowing you to modify the commit or its contents before continuing.
+CONCEPT: interactive_rebase
+DIFFICULTY: 2
+
+Q: True or False: You can safely rebase commits that have already been pushed to a shared repository.
+TYPE: true_false
+A1: True
+A2: False
+CORRECT: 2
+EXPLANATION: Rebasing rewrites history, so rebasing commits that others may have based work on can cause problems. Only rebase commits that haven't been shared publicly.
+CONCEPT: interactive_rebase
+DIFFICULTY: 3
+
+Q: What command would you use to start an interactive rebase for the last 5 commits?
+TYPE: multiple_choice
+A1: git rebase -i HEAD~5
+A2: git rebase -i 5
+A3: git rebase --interactive 5
+A4: git rebase -i -5
+CORRECT: 1
+EXPLANATION: git rebase -i HEAD~5 starts an interactive rebase for the last 5 commits, where HEAD~5 means 5 commits back from HEAD.
+CONCEPT: interactive_rebase
+DIFFICULTY: 1
+
+Q: Which of the following is NOT a valid interactive rebase command?
+TYPE: multiple_choice
+A1: pick
+A2: squash
+A3: merge
+A4: drop
+CORRECT: 3
+EXPLANATION: The valid interactive rebase commands are pick, reword, edit, squash, fixup, and drop. "merge" is not a rebase command.
+CONCEPT: interactive_rebase
+DIFFICULTY: 2
+
+Q: What is the difference between "squash" and "fixup" in interactive rebase?
+TYPE: multiple_choice
+A1: There is no difference
+A2: squash lets you edit the commit message, fixup uses the previous commit's message
+A3: fixup combines commits, squash doesn't
+A4: squash works with multiple commits, fixup only works with two
+CORRECT: 2
+EXPLANATION: Both squash and fixup combine commits, but squash opens an editor to modify the commit message, while fixup automatically uses the previous commit's message.
+CONCEPT: squash_commits
+DIFFICULTY: 2
+
+Q: True or False: Interactive rebase can be used to change the order of commits.
+TYPE: true_false
+A1: True
+A2: False
+CORRECT: 1
+EXPLANATION: Yes, you can reorder commits during interactive rebase by changing the order of the pick commands in the rebase editor.
+CONCEPT: reorder_commits
+DIFFICULTY: 1
+
+Q: What should you do if you encounter conflicts during a rebase?
+TYPE: multiple_choice
+A1: Abort the rebase with git rebase --abort
+A2: Resolve conflicts, stage changes, then continue with git rebase --continue
+A3: Skip the conflicting commit with git rebase --skip
+A4: All of the above are valid options
+CORRECT: 4
+EXPLANATION: All options are valid: you can abort the rebase, resolve conflicts and continue, or skip the conflicting commit depending on your needs.
+CONCEPT: rebase_conflicts
+DIFFICULTY: 3
+
+Q: What is the primary purpose of using conventional commit messages?
+TYPE: multiple_choice
+A1: To make commits look professional
+A2: To enable automatic changelog generation and semantic versioning
+A3: To make git log output prettier
+A4: To satisfy company coding standards
+CORRECT: 2
+EXPLANATION: Conventional commits follow a structured format that enables automated tooling for changelog generation, semantic versioning, and release management.
+CONCEPT: edit_messages
+DIFFICULTY: 2

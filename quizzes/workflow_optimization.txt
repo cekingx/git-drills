@@ -1,0 +1,105 @@
+Q: What is the most efficient way to clean up a feature branch before merging?
+TYPE: multiple_choice
+A1: Delete all commits and start over
+A2: Use interactive rebase to squash and reorder commits
+A3: Create a new branch and cherry-pick commits
+A4: Merge directly without cleaning up
+CORRECT: 2
+EXPLANATION: Interactive rebase allows you to squash related commits, reorder them logically, and improve commit messages without losing work.
+CONCEPT: workflow_optimization
+DIFFICULTY: 2
+
+Q: You have 5 commits with messages "WIP", "fix bug", "WIP", "add feature", "fix typo". What's the best rebase strategy?
+TYPE: multiple_choice
+A1: Squash all commits into one
+A2: Squash WIP commits with related feature commits, keep bug fix separate
+A3: Reorder commits then squash
+A4: Edit all commit messages first
+CORRECT: 2
+EXPLANATION: Group related commits together while keeping logically separate changes (like bug fixes) in their own commits for clearer history.
+CONCEPT: squash_commits
+DIFFICULTY: 3
+
+Q: True or False: A good commit should contain changes to multiple unrelated features.
+TYPE: true_false
+A1: True
+A2: False
+CORRECT: 2
+EXPLANATION: Commits should be atomic - each commit should represent one logical change or feature. This makes history easier to understand and debug.
+CONCEPT: workflow_optimization
+DIFFICULTY: 1
+
+Q: What is the recommended approach for handling "fix typo" commits?
+TYPE: multiple_choice
+A1: Leave them as separate commits
+A2: Squash them with the commits that introduced the typos
+A3: Delete them entirely
+A4: Move them to the end of the commit history
+CORRECT: 2
+EXPLANATION: Typo fixes should be squashed with the original commits they fix to maintain clean, atomic commits.
+CONCEPT: squash_commits
+DIFFICULTY: 2
+
+Q: When preparing a feature branch for a pull request, what should you prioritize?
+TYPE: multiple_choice
+A1: Having as many commits as possible
+A2: Having commits in chronological order
+A3: Having logical, atomic commits with clear messages
+A4: Having all commits by the same author
+CORRECT: 3
+EXPLANATION: Clean, logical commits with clear messages make code review easier and provide better documentation of changes.
+CONCEPT: workflow_optimization
+DIFFICULTY: 2
+
+Q: What is the main benefit of using aliases for common Git commands?
+TYPE: multiple_choice
+A1: Makes commands look more professional
+A2: Reduces typing and speeds up workflow
+A3: Makes Git work faster
+A4: Prevents typos in commands
+CORRECT: 2
+EXPLANATION: Aliases like "git co" for checkout or "git st" for status reduce typing and speed up your workflow, especially for frequently used commands.
+CONCEPT: workflow_optimization
+DIFFICULTY: 1
+
+Q: True or False: You should always rebase feature branches onto the latest main branch before merging.
+TYPE: true_false
+A1: True
+A2: False
+CORRECT: 1
+EXPLANATION: Rebasing onto the latest main ensures your feature branch includes the latest changes and creates a cleaner, linear history.
+CONCEPT: workflow_optimization
+DIFFICULTY: 2
+
+Q: What is the recommended maximum number of commits for a typical feature branch?
+TYPE: multiple_choice
+A1: 1-3 commits
+A2: 5-10 commits
+A3: 10-20 commits
+A4: There is no recommended maximum
+CORRECT: 2
+EXPLANATION: Most feature branches should have 5-10 logical commits. Too few commits may group unrelated changes, too many may indicate commits that should be squashed.
+CONCEPT: workflow_optimization
+DIFFICULTY: 2
+
+Q: Which approach is better for maintaining a clean Git history?
+TYPE: multiple_choice
+A1: Frequent small commits with detailed cleanup later
+A2: Fewer, larger commits made carefully
+A3: Merge commits for all features
+A4: Never using branches
+CORRECT: 1
+EXPLANATION: Making frequent small commits during development allows for detailed tracking, then cleaning up with interactive rebase provides the best of both worlds.
+CONCEPT: workflow_optimization
+DIFFICULTY: 3
+
+Q: What is the primary advantage of atomic commits?
+TYPE: multiple_choice
+A1: They are easier to write
+A2: They make git log shorter
+A3: They can be safely reverted without affecting other features
+A4: They make rebasing unnecessary
+CORRECT: 3
+EXPLANATION: Atomic commits contain only one logical change, so they can be safely reverted, cherry-picked, or analyzed without affecting unrelated features.
+CONCEPT: workflow_optimization
+DIFFICULTY: 2
